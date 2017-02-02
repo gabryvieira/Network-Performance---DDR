@@ -1,0 +1,74 @@
+Version: 1
+Number of flows: 3
+0:{'Output Interface Idx': 0, 'Src_addr': '10.0.1.100', 'Next_hoop': '0.0.0.0', 'Input Interface Idx': 1, 'Pkts send ': 2, 'Bytes send': 912, 'Dest_addr': '10.0.0.1'}
+1:{'Output Interface Idx': 2, 'Src_addr': '10.0.1.100', 'Next_hoop': '10.1.2.2', 'Input Interface Idx': 1, 'Pkts send ': 10, 'Bytes send': 840, 'Dest_addr': '10.0.4.3'}
+2:{'Output Interface Idx': 2, 'Src_addr': '10.0.1.100', 'Next_hoop': '10.1.2.2', 'Input Interface Idx': 1, 'Pkts send ': 10, 'Bytes send': 840, 'Dest_addr': '10.0.4.3'}
+
+===========================================================================
+[Source Net IP, Dest Net IP,Numero de Fluxos(Pkts send, Bytes send)]
+
+('other', 'other', 1, (2, 912))('other', IPNetwork('10.0.2.0/24'), 0, (0, 0))('other', IPNetwork('10.0.3.0/24'), 0, (0, 0))('other', IPNetwork('10.0.4.0/24'), 2, (20, 1680))
+(IPNetwork('10.0.2.0/24'), 'other', 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.2.0/24'), 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.3.0/24'), 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.4.0/24'), 0, (0, 0))
+(IPNetwork('10.0.3.0/24'), 'other', 0, (0, 0))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.2.0/24'), 0, (0, 0))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.3.0/24'), 0, (0, 0))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.4.0/24'), 0, (0, 0))
+(IPNetwork('10.0.4.0/24'), 'other', 0, (0, 0))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.2.0/24'), 0, (0, 0))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.3.0/24'), 0, (0, 0))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.4.0/24'), 0, (0, 0))
+===========================================================================
+Version: 1
+Number of flows: 4
+0:{'Output Interface Idx': 1, 'Src_addr': '10.0.4.3', 'Next_hoop': '10.1.2.1', 'Input Interface Idx': 4, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.1.100'}
+1:{'Output Interface Idx': 1, 'Src_addr': '10.0.4.3', 'Next_hoop': '10.1.2.1', 'Input Interface Idx': 4, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.1.100'}
+2:{'Output Interface Idx': 2, 'Src_addr': '10.0.4.3', 'Next_hoop': '10.0.2.3', 'Input Interface Idx': 4, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.2.3'}
+3:{'Output Interface Idx': 4, 'Src_addr': '10.0.2.3', 'Next_hoop': '10.0.4.3', 'Input Interface Idx': 2, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.4.3'}
+
+===========================================================================
+[Source Net IP, Dest Net IP,Numero de Fluxos(Pkts send, Bytes send)]
+
+('other', 'other', 1, (2, 912))('other', IPNetwork('10.0.2.0/24'), 0, (0, 0))('other', IPNetwork('10.0.3.0/24'), 0, (0, 0))('other', IPNetwork('10.0.4.0/24'), 2, (20, 1680))
+(IPNetwork('10.0.2.0/24'), 'other', 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.2.0/24'), 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.3.0/24'), 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.4.0/24'), 1, (5, 420))
+(IPNetwork('10.0.3.0/24'), 'other', 0, (0, 0))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.2.0/24'), 0, (0, 0))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.3.0/24'), 0, (0, 0))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.4.0/24'), 0, (0, 0))
+(IPNetwork('10.0.4.0/24'), 'other', 2, (10, 840))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.2.0/24'), 1, (5, 420))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.3.0/24'), 0, (0, 0))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.4.0/24'), 0, (0, 0))
+===========================================================================
+Version: 1
+Number of flows: 3
+0:{'Output Interface Idx': 3, 'Src_addr': '10.0.4.3', 'Next_hoop': '10.0.3.3', 'Input Interface Idx': 4, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.3.3'}
+1:{'Output Interface Idx': 4, 'Src_addr': '10.0.3.3', 'Next_hoop': '10.0.4.3', 'Input Interface Idx': 3, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.4.3'}
+2:{'Output Interface Idx': 0, 'Src_addr': '10.0.4.3', 'Next_hoop': '0.0.0.0', 'Input Interface Idx': 4, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.4.2'}
+
+===========================================================================
+[Source Net IP, Dest Net IP,Numero de Fluxos(Pkts send, Bytes send)]
+
+('other', 'other', 1, (2, 912))('other', IPNetwork('10.0.2.0/24'), 0, (0, 0))('other', IPNetwork('10.0.3.0/24'), 0, (0, 0))('other', IPNetwork('10.0.4.0/24'), 2, (20, 1680))
+(IPNetwork('10.0.2.0/24'), 'other', 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.2.0/24'), 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.3.0/24'), 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.4.0/24'), 1, (5, 420))
+(IPNetwork('10.0.3.0/24'), 'other', 0, (0, 0))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.2.0/24'), 0, (0, 0))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.3.0/24'), 0, (0, 0))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.4.0/24'), 1, (5, 420))
+(IPNetwork('10.0.4.0/24'), 'other', 2, (10, 840))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.2.0/24'), 1, (5, 420))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.3.0/24'), 1, (5, 420))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.4.0/24'), 1, (5, 420))
+===========================================================================
+Version: 1
+Number of flows: 5
+0:{'Output Interface Idx': 0, 'Src_addr': '10.0.3.3', 'Next_hoop': '0.0.0.0', 'Input Interface Idx': 3, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.3.2'}
+1:{'Output Interface Idx': 4, 'Src_addr': '10.0.3.3', 'Next_hoop': '10.0.4.3', 'Input Interface Idx': 3, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.4.3'}
+2:{'Output Interface Idx': 3, 'Src_addr': '10.0.4.3', 'Next_hoop': '10.0.3.3', 'Input Interface Idx': 4, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.3.3'}
+3:{'Output Interface Idx': 2, 'Src_addr': '10.0.3.3', 'Next_hoop': '10.0.2.3', 'Input Interface Idx': 3, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.2.3'}
+4:{'Output Interface Idx': 3, 'Src_addr': '10.0.2.3', 'Next_hoop': '10.0.3.3', 'Input Interface Idx': 2, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.0.3.3'}
+
+===========================================================================
+[Source Net IP, Dest Net IP,Numero de Fluxos(Pkts send, Bytes send)]
+
+('other', 'other', 1, (2, 912))('other', IPNetwork('10.0.2.0/24'), 0, (0, 0))('other', IPNetwork('10.0.3.0/24'), 0, (0, 0))('other', IPNetwork('10.0.4.0/24'), 2, (20, 1680))
+(IPNetwork('10.0.2.0/24'), 'other', 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.2.0/24'), 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.3.0/24'), 1, (5, 420))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.4.0/24'), 1, (5, 420))
+(IPNetwork('10.0.3.0/24'), 'other', 0, (0, 0))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.2.0/24'), 1, (5, 420))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.3.0/24'), 1, (5, 420))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.4.0/24'), 2, (10, 840))
+(IPNetwork('10.0.4.0/24'), 'other', 2, (10, 840))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.2.0/24'), 1, (5, 420))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.3.0/24'), 2, (10, 840))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.4.0/24'), 1, (5, 420))
+===========================================================================
+Version: 1
+Number of flows: 4
+0:{'Output Interface Idx': 1, 'Src_addr': '10.0.2.3', 'Next_hoop': '10.1.2.1', 'Input Interface Idx': 2, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.1.1.2'}
+1:{'Output Interface Idx': 1, 'Src_addr': '10.0.2.3', 'Next_hoop': '10.1.2.1', 'Input Interface Idx': 2, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.1.1.2'}
+2:{'Output Interface Idx': 1, 'Src_addr': '10.0.3.3', 'Next_hoop': '10.1.2.1', 'Input Interface Idx': 3, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.1.1.2'}
+3:{'Output Interface Idx': 1, 'Src_addr': '10.0.3.3', 'Next_hoop': '10.1.2.1', 'Input Interface Idx': 3, 'Pkts send ': 5, 'Bytes send': 420, 'Dest_addr': '10.1.1.2'}
+
+===========================================================================
+[Source Net IP, Dest Net IP,Numero de Fluxos(Pkts send, Bytes send)]
+
+('other', 'other', 1, (2, 912))('other', IPNetwork('10.0.2.0/24'), 0, (0, 0))('other', IPNetwork('10.0.3.0/24'), 0, (0, 0))('other', IPNetwork('10.0.4.0/24'), 2, (20, 1680))
+(IPNetwork('10.0.2.0/24'), 'other', 2, (10, 840))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.2.0/24'), 0, (0, 0))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.3.0/24'), 1, (5, 420))(IPNetwork('10.0.2.0/24'), IPNetwork('10.0.4.0/24'), 1, (5, 420))
+(IPNetwork('10.0.3.0/24'), 'other', 2, (10, 840))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.2.0/24'), 1, (5, 420))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.3.0/24'), 1, (5, 420))(IPNetwork('10.0.3.0/24'), IPNetwork('10.0.4.0/24'), 2, (10, 840))
+(IPNetwork('10.0.4.0/24'), 'other', 2, (10, 840))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.2.0/24'), 1, (5, 420))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.3.0/24'), 2, (10, 840))(IPNetwork('10.0.4.0/24'), IPNetwork('10.0.4.0/24'), 1, (5, 420))
+===========================================================================
